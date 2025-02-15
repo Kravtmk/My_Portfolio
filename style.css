@@ -1,4 +1,16 @@
 /* Consolidated and improved CSS for Oleksandr Kravchuk Portfolio */
+.profile-photo {
+    width: 150px; 
+    height: 150px;
+    object-fit: cover; 
+    border-radius: 25%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 
 :root {
     --primary-color: #007BFF;
