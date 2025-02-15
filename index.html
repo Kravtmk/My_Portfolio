@@ -1,19 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Game Website</title>
+    <meta name="description" content="Oleksandr Kravchuk Portfolio - Junior Front-End Developer with experience in HTML, CSS, JavaScript, and Angular.">
+    <meta name="author" content="Oleksandr Kravchuk">
+    <meta name="keywords" content="Junior Front-End Developer, HTML, CSS, JavaScript, Angular, Portfolio, Web Development, Oleksandr Kravchuk">
+    <meta property="og:title" content="Oleksandr Kravchuk Portfolio">
+    <meta property="og:description" content="Portfolio of Oleksandr Kravchuk, a Junior Front-End Developer with experience in HTML, CSS, JavaScript, and Angular.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Portfolio | Oleksandr Kravchuk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">    
 </head>
 <body>
- <img src="img/download.jpg"
- width="120" height="120" />
-<h1> Aleksandr Makedonskiy </h1>
-<h2> I love self-education </h2>
-<p> Hi my frend </p>
-    <h1>Welcome to My Game Website</h1>
-    <p>Click the button below to play Rock, Paper, Scissors!</p>
-    <button onclick="window.location.href='game.html'">Play Now</button>
+    <header>
+        <div class="container">
+            <img src="img/profile.jpg" alt="Oleksandr Kravchuk" class="profile-photo">
+            <p>Welcome to my page!</p>
+            <h1>Oleksandr Kravchuk</h1>
+            <p>Junior Front-End Developer</p>            
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate Web Developer with experience in front-end development using HTML, CSS, and JavaScript. Currently learning Angular and improving my JavaScript skills.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill">
+                <p>HTML & CSS</p>
+                <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+            </div>
+            <div class="skill">
+                <p>Angular</p>
+                <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="certificates">
+        <div class="container">
+            <h2>My Certificates</h2>
+            <div class="certificates-grid">
+                <div class="cert-card">
+                    <iframe src="certificates/HTML.pdf" style="width: 100%; height: 400px; overflow: hidden; border: none;"></iframe>
+                    <p><strong>HTML</strong> - Issued: October 17, 2024</p>
+                    <a href="certificates/HTML.pdf" target="_blank">View Certificate</a>
+                </div>
+                <div class="cert-card">
+                    <iframe src="certificates/JavaScript.pdf" style="width: 100%; height: 400px; overflow: hidden; border: none;"></iframe>
+                    <p><strong>JavaScript</strong> - Issued: October 17, 2024</p>
+                    <a href="certificates/JavaScript.pdf" target="_blank">View Certificate</a>
+                </div>
+                <div class="cert-card">
+                    <iframe src="certificates/SQL.pdf" style="width: 100%; height: 400px; overflow: hidden; border: none;"></iframe>
+                    <p><strong>SQL</strong> - Issued: October 17, 2024</p>
+                    <a href="certificates/SQL.pdf" target="_blank">View Certificate</a>
+                </div>
+                <div class="cert-card">
+                    <iframe src="certificates/TypeScript.pdf" style="width: 100%; height: 400px; overflow: hidden; border: none;"></iframe>
+                    <p><strong>TypeScript</strong> - Issued: October 17, 2024</p>
+                    <a href="certificates/TypeScript.pdf" target="_blank">View Certificate</a>
+                </div>
+                <div class="cert-card">
+                    <iframe src="certificates/Swift.pdf" style="width: 100%; height: 400px; overflow: hidden; border: none;"></iframe>
+                    <p><strong>Swift</strong> - Issued: October 31, 2024</p>
+                    <a href="certificates/Swift.pdf" target="_blank">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <h3>Task Management Web Application</h3>
+                <p><strong>Technologies:</strong> Angular, HTML, CSS, JavaScript, MySQL, Docker</p>
+                <p>Developed a task management system with an intuitive UI, backend integration, and Docker-based deployment.</p>
+            
+            
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:Kravtmk@gmail.com"><i class="fas fa-envelope"></i> Kravtmk@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/Kravtmk" target="_blank"><i class="fab fa-github"></i> github.com/Kravtmk</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/oleksandr-kravchuk-ba3a94350" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/oleksandr-kravchuk-ba3a94350</a></p>
+        </div>
+    </section>
+
+    <a href="https://t.me/your_name" target="_blank" title="Написать в Telegram" rel="noopener noreferrer">
+        <div class="telegram-button">
+            <i class="fab fa-telegram"></i>
+        </div>
+    </a>
+    
+    
+    
+
+    <footer>
+        <p>&copy; 2025 Oleksandr Kravchuk | All Rights Reserved</p>
+    </footer>
+    <script src="script.js"defer></script>
+    <button id="scrollToTop" onclick="scrollToTop()">⬆ Back to Top</button>
+
+
 </body>
-</html>
+</lang=>
