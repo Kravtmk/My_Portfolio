@@ -237,3 +237,24 @@ a:hover, button:hover {
 #contact a[href*="linkedin"] i {
     color: #0A66C2; 
 }
+
+iframe {
+    width: 100%;
+    height: auto;
+    overflow-y: scroll;
+}
+.cert-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+@media (max-width: 480px) {
+    .cert-card {
+        width: 90%;
+    }
+    iframe {
+        height: 300px;
+    }
+}
+
+
