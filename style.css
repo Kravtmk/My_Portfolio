@@ -1,0 +1,239 @@
+.profile-photo {
+    width: 150px; 
+    height: 150px;
+    object-fit: cover; 
+    border-radius: 25%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+header{
+    background: linear-gradient(135deg, #6a11cb, #2575fc);    
+    text-align: center;    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color:black;
+}
+
+
+
+section {
+    padding: 20px;
+    margin: 20px 0;    
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+#contact a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.progress {
+    background: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #007BFF;
+    transition: width 1s ease-in-out;
+}
+
+.telegram-button {
+    position: fixed;
+    right: 13px;
+    bottom: 90px;
+    background: #0088cc;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    box-shadow: 0 4px 10px rgba(0, 136, 204, 0.5);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.telegram-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 136, 204, 0.8);
+}
+
+
+.telegram-button:before,
+.telegram-button:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #0088cc;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    bottom: -10px;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+
+.telegram-button:after {
+    animation-delay: 0.5s;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .telegram-button {
+        bottom: 20px;
+        left: 20px;
+    }
+}
+
+#certificates {
+    padding: 50px 20px;
+}
+
+#certificates h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.certificates-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cert-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cert-card img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.cert-card p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cert-card a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.cert-card a:hover {
+    background: #0056b3;
+}
+
+
+
+@media (max-width: 768px) {
+    .certificates-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cert-card {
+        width: 90%;
+    }
+}
+
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#scrollToTop:hover {
+    background: #0056b3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a, button {
+    transition: all 0.3s ease;
+}
+a:hover, button:hover {
+    transform: scale(1.05);
+}
+
+#contact a[href*="gmail"] i {
+    color: #EA4335;
+}
+#contact a[href*="github"] i {
+    color: #333333;
+}
+#contact a[href*="linkedin"] i {
+    color: #0A66C2; 
+}
