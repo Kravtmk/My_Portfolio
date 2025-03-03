@@ -25,3 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const carousel = document.querySelector("#projectsCarousel");
+  carousel.addEventListener("slid.bs.carousel", () => {
+      console.log("Slide changed");
+  });
+});

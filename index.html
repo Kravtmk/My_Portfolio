@@ -88,14 +88,34 @@
 
     <section id="projects">
         <div class="container">
-            <h2>My Projects</h2>
-            <h3>Task Management Web Application</h3>
-                <p><strong>Technologies:</strong> Angular, HTML, CSS, JavaScript, MySQL, Docker</p>
-                <p>Developed a task management system with an intuitive UI, backend integration, and Docker-based deployment.</p>
+            <h2 class="text-center">My Projects</h2>
             
+            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <h3>Guess the Number Game</h3>
+                            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                            <p>A simple number guessing game that provides feedback on whether the guessed number is too high or too low.</p>
+                            <iframe src="https://kravtmk.github.io/Guessing-Game/index.html"></iframe>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
             
         </div>
     </section>
+        
+
 
     <section id="contact">
         <div class="container">
