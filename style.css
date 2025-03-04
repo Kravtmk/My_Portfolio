@@ -244,8 +244,9 @@ a:hover, button:hover {
 }
 
 .carousel-item iframe {
-    max-width: 80%;
-    height: 350px;
+    width: 100%;
+    max-width: 600px;
+    height: 900px;
     display: block;
     margin: 0 auto;
     border: none;
